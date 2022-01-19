@@ -6,17 +6,17 @@ pipeline {
     stages {
         stage('one') {
             steps {
-                echo "dafa 1 ${Name} dfasdf ${Environnment} "
+                echo "Hello ${Name} Building in ${Environnment} "
             }
         }
         stage('Two') {
             steps {
-                echo "dafa 2 ${Name} dfasdf ${Environnment}"
+                echo "Hello ${Name} Building in  ${Environnment}"
             }
         }
         stage('Three') {
             steps {
-                echo "dafa 3 ${Name} dfasdf ${Environnment}"
+                echo "Hello ${Name} Building in  ${Environnment}"
             }
         }
     }
