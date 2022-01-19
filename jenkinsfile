@@ -1,4 +1,4 @@
-properties([parameters([string(description: 'Enter your name', name: 'Name'), choice(choices: ['DEV', 'QA', 'UAT', 'PROD'], description: 'Where you want to deploy?', name: 'Environment')])])
+properties([parameters([string(description: 'Enter your name', name: 'Name'), choice(choices: ['DEV', 'QA', 'UAT', 'PROD'], description: 'Where you want to deploy?', name: 'Environnment')])])
 
 pipeline {
     agent any
@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Three') {
             steps {
-                echo "${Environment}"
+                echo "${Environnment}"
             }
         }
     }
