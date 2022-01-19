@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Two') {
             steps {
-                echo "Hello ${Name} testing in  ${Environnment}"
+                echo "Hello ${Name} hard testing in  ${Environnment}"
             }
         }
         stage('Three') {
