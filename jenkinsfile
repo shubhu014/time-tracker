@@ -6,17 +6,17 @@ pipeline {
     stages {
         stage('one') {
             steps {
-                echo 'Hello ${Name}, First Stage from SCM in ${Environment}'
+                echo '${Name}'
             }
         }
         stage('Two') {
             steps {
-                echo 'Hello ${Name}, Second Stage from SCM Git in ${Environment}'
+                echo '${Environment}'
             }
         }
         stage('Three') {
             steps {
-                echo 'Hello ${Name}, Third Stage from SCM Git repo in ${Environment}'
+                echo '${Environment}'
             }
         }
     }
