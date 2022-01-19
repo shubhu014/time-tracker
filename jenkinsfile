@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Two') {
             steps {
-                echo "${Environment}"
+                echo "${Name}"
             }
         }
         stage('Three') {
