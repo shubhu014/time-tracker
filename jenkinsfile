@@ -6,17 +6,17 @@ pipeline {
     stages {
         stage('one') {
             steps {
-                echo '${Name}'
+                echo "${Name}"
             }
         }
         stage('Two') {
             steps {
-                echo '${Environment}'
+                echo "${Environment}"
             }
         }
         stage('Three') {
             steps {
-                echo '${Environment}'
+                echo "${Environment}"
             }
         }
     }
