@@ -11,12 +11,12 @@ pipeline {
         }
         stage('Two') {
             steps {
-                echo "Hello ${Name} Building in  ${Environnment}"
+                echo "Hello ${Name} testing in  ${Environnment}"
             }
         }
         stage('Three') {
             steps {
-                echo "Hello ${Name} Building in  ${Environnment}"
+                echo "Hello ${Name} deploying in  ${Environnment}"
             }
         }
     }
