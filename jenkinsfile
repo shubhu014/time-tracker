@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Three') {
             steps {
-                echo "Hello ${Name} deploying in  ${Environnment}"
+                echo "Hello1 ${Name} deploying in  ${Environnment}"
             }
         }
     }
