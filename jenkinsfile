@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('one') {
             steps {
-                echo "Hello ${Name} Building in ${Environnment} "
+                echo "Hello ${Name} Your code is Building in ${Environnment} "
             }
         }
         stage('Two') {
