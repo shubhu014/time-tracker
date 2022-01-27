@@ -16,7 +16,7 @@ pipeline {
                 //sh 'chef generate cookbook Jenkins-Chef-trial'
                 //sh 'sudo mkdir -p /home/ubuntu/chef-repo/cookbooks/Jenkins-Chef-trial'
                 //sh 'sudo mv /var/lib/jenkins/workspace/Jenkins-Chef/Jenkins-Chef-trial /home/ubuntu/chef-repo/cookbooks/'
-                sh 'sudo mv /var/lib/jenkins/workspace/Jenkins-Chef/recipes/ /home/ubuntu/chef-repo/cookbooks/Jenkins-Chef-trial/recipes/'
+                sh 'sudo mv /var/lib/jenkins/workspace/Jenkins-Chef/recipes/default.rb /home/ubuntu/chef-repo/cookbooks/Jenkins-Chef-trial/recipes/'
            }
        }
         
