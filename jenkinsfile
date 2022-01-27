@@ -21,7 +21,7 @@ pipeline {
        }
         stage('Updating chef workstation') {
             steps {
-                  sh "chef-client -zr 'recipe[Jenkins-Chef-trial]'"
+                  sh "chef-client -zr 'recipe[Jenkins-Chef-trial]' --force -o /home/ubuntu/chef-repo/cookbooks"
                 }
        }
        
