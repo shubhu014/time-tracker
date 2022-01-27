@@ -4,10 +4,10 @@ pipeline {
     stages {
 
         
-        stage('Download Cookbooksss') {
+        stage('Download CCCCCookbooksss') {
             steps {
                 
-                ["git", "clone", "https://github.com/shubhu014/Jenkins-Chef-Demo.git"].execute()
+                git url: "https://github.com/shubhu014/Jenkins-Chef-Demo.git"
                 
             }
         }
