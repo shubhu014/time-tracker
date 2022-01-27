@@ -14,7 +14,7 @@ pipeline {
         stage('Upload cookbook to chef server') {
             steps {
                 
-                sh 'mkdir -p /home/ubuntu/veryNewDir'
+                echo pwd
                 
             }
         }
