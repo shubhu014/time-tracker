@@ -22,7 +22,7 @@ pipeline {
        
           stage('Upload cookbook to chef server') {
             steps {
-                cd /home/ubuntu/chef-repo
+                sh 'cd /home/ubuntu/chef-repo'
                 sh "knife cookbook upload Jenkins-Chef-trial"
            }
        }
