@@ -13,6 +13,7 @@ pipeline {
         }
         stage('Upload cookbook to chef server') {
             steps {
+                sh 'chef generate cookbook Jenkins-Chef-trial'
                 sh 'sudo mkdir -p /home/ubuntu/chef-repo/cookbooks/Jenkins-Chef-demo'
                 sh 'sudo mv /var/lib/jenkins/workspace/Jenkins-Chef/recipes /home/ubuntu/chef-repo/cookbooks/Jenkins-Chef-demo'
                 
