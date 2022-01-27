@@ -19,6 +19,11 @@ pipeline {
                 sh 'sudo mv /var/lib/jenkins/workspace/Jenkins-Chef/recipes/default.rb /home/ubuntu/chef-repo/cookbooks/Jenkins-Chef-trial/recipes/'
            }
        }
+        stage('Updating chef workstation') {
+            steps {
+                  sh "chef-client -zr 'recipe[Jenkins-Chef-trial]'"
+                }
+       }
        
           stage('Upload cookbook to chef server') {
             steps {
