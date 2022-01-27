@@ -11,7 +11,7 @@ pipeline {
                 
             }
         }
-        stage('Upload cookbook to chef server') {
+        stage('Move recipe to required location') {
             steps {
                 //sh 'chef generate cookbook Jenkins-Chef-trial'
                 //sh 'sudo mkdir -p /home/ubuntu/chef-repo/cookbooks/Jenkins-Chef-trial'
@@ -19,6 +19,13 @@ pipeline {
                 sh 'sudo mv /var/lib/jenkins/workspace/Jenkins-Chef/recipes/default.rb /home/ubuntu/chef-repo/cookbooks/Jenkins-Chef-trial/recipes/'
            }
        }
+       
+          stage('Upload cookbook to chef server') {
+            steps {
+                sh "knife cookbook upload Jenkins-Chef-trial"
+           }
+       }
+       
         
         
         
