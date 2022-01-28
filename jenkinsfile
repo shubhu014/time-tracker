@@ -34,7 +34,7 @@ pipeline {
        
         stage('Print Workspace') {
             steps {
-                sh "${WORKSPACE}"
+                echo "${WORKSPACE}"
            }
        }
         
