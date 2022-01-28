@@ -4,7 +4,7 @@ pipeline {
     stages {
 
         
-        stage('Download CCCCCookbooksss') {
+        stage('Download Recipe') {
             steps {
                 
                 git 'https://github.com/shubhu014/Jenkins-Chef-Demo.git'
